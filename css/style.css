@@ -1,0 +1,16 @@
+.rosso{
+  color: red;
+}
+
+.verde{
+  color: green;
+}
+
+.giallo{
+  color: yellow;
+}
+
+button{
+  padding: 3px;
+  margin: 10px;
+}

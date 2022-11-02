@@ -12,7 +12,14 @@ const {createApp} = Vue;
 createApp({
   data(){
     return{
-      messaggio: 'ciao Vue!'
+      messaggio: 'ciao Vue!',
+      mioColore: 'rosso'
+    }
+  },
+
+  methods:{
+    colorChange(colore){
+      this.mioColore = colore;
     }
   }
 

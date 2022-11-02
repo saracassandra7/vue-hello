@@ -12,7 +12,11 @@
 </head>
 <body>
   <div id="app"> 
-    <h1>{{messaggio}}</h1>
+    <h1 :class="mioColore">{{messaggio}}</h1>
+    <button @click = "colorChange('giallo')">Cambia in giallo</button>
+    <button @click = "colorChange('verde')">Cambia in verde</button>
+    <button @click = "colorChange('rosso')">Cambia in rosso</button>
+    
   </div>
   <script src="js/script.js"></script>
 </body>
