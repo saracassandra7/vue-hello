@@ -13,9 +13,24 @@
 <body>
   <div id="app"> 
     <h1 :class="mioColore">{{messaggio}}</h1>
+    <br>
+    <input type="text" v-model = "messaggio">
+    <br>
     <button @click = "colorChange('giallo')">Cambia in giallo</button>
     <button @click = "colorChange('verde')">Cambia in verde</button>
     <button @click = "colorChange('rosso')">Cambia in rosso</button>
+    <br>
+    <br>
+    <br>
+
+    <button @click = "imgChange('borgo.jpg')">Cambia immagine</button>
+    <button @click = "invertShow()">Mostra testo</button>
+
+    <br>
+
+    <img v-show = "isShown" :src="path + nomeImg" alt="">
+    <p v-show = "!isShown">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti vel reprehenderit dolorum odit illum ipsa rerum sint. Numquam, veniam non illum ipsum explicabo sit debitis vitae. Soluta officiis corrupti suscipit, perspiciatis illum excepturi, adipisci, est culpa hic voluptate accusamus obcaecati provident cumque atque autem qui! Autem nostrum aut doloribus exercitationem.</p>
+    
     
   </div>
   <script src="js/script.js"></script>

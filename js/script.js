@@ -13,13 +13,24 @@ createApp({
   data(){
     return{
       messaggio: 'ciao Vue!',
-      mioColore: 'rosso'
+      mioColore: 'rosso',
+      path: 'img/',
+      nomeImg: 'pianeta.jpg',
+      isShown: true
     }
   },
 
   methods:{
     colorChange(colore){
       this.mioColore = colore;
+    },
+
+    imgChange(NewNomeImg){
+      this.nomeImg = NewNomeImg;
+    },
+
+    invertShow(){
+      this.isShown = !this.isShown
     }
   }
 
